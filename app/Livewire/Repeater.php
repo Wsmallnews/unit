@@ -34,6 +34,10 @@ class Repeater extends Page
     {
         $this->record = CategoryType::with('categories')->find(1);
 
+        $a = new CategoryType();
+        dd(get_class($a->where('categories', 3)->getModel()));
+
+
         $this->form->fill($this->record?->toArray());
     }
 
