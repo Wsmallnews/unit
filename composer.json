@@ -76,15 +76,31 @@
     "repositories": {
         "category": {
             "type": "path",
-            "url": "../addons/category"
+            "url": "./addons/category"
         },
         "evaluate": {
             "type": "path",
-            "url": "../addons/evaluate"
+            "url": "./addons/evaluate"
+        },
+        "order": {
+            "type": "path",
+            "url": "./addons/order"
+        },
+        "product": {
+            "type": "path",
+            "url": "./addons/product"
+        },
+        "shop": {
+            "type": "path",
+            "url": "./addons/shop"
         },
         "support": {
             "type": "path",
-            "url": "../addons/support"
+            "url": "./addons/support"
+        },
+        "user": {
+            "type": "path",
+            "url": "./addons/user"
         }
     }
 }
