@@ -1,0 +1,21 @@
+[submodule "addons/category"]
+	path = addons/category
+	url = git@github.com:Wsmallnews/category.git
+[submodule "addons/evaluate"]
+	path = addons/evaluate
+	url = git@github.com:Wsmallnews/evaluate.git
+[submodule "addons/order"]
+	path = addons/order
+	url = git@github.com:Wsmallnews/order.git
+[submodule "addons/product"]
+	path = addons/product
+	url = git@github.com:Wsmallnews/product.git
+[submodule "addons/shop"]
+	path = addons/shop
+	url = git@github.com:Wsmallnews/shop.git
+[submodule "addons/support"]
+	path = addons/support
+	url = git@github.com:Wsmallnews/support.git
+[submodule "addons/user"]
+	path = addons/user
+	url = git@github.com:Wsmallnews/user.git

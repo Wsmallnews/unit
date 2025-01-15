@@ -11,7 +11,11 @@
         "laravel/tinker": "^2.9",
         "wsmallnews/category": "dev-master",
         "wsmallnews/evaluate": "dev-main",
-        "wsmallnews/support": "dev-main"
+        "wsmallnews/product": "dev-main",
+        "wsmallnews/order": "dev-main",
+        "wsmallnews/shop": "dev-main",
+        "wsmallnews/support": "dev-main",
+        "wsmallnews/user": "dev-main"
     },
     "require-dev": {
         "fakerphp/faker": "^1.23",
@@ -82,13 +86,13 @@
             "type": "path",
             "url": "./addons/evaluate"
         },
-        "order": {
-            "type": "path",
-            "url": "./addons/order"
-        },
         "product": {
             "type": "path",
             "url": "./addons/product"
+        },
+        "order": {
+            "type": "path",
+            "url": "./addons/order"
         },
         "shop": {
             "type": "path",
