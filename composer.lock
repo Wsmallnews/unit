@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "412d0a29dd78bfe77b959ca7ee86f5a8",
+    "content-hash": "f0820d6561484e3e8d688f46b779d35f",
     "packages": [
         {
             "name": "anourvalar/eloquent-serialize",
@@ -3514,6 +3514,94 @@
                 "xml"
             ],
             "time": "2024-03-31T07:05:07+00:00"
+        },
+        {
+            "name": "moneyphp/money",
+            "version": "v4.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/moneyphp/money.git",
+                "reference": "ddf6a86b574808f8844777ed4e8c4f92a10dac9b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/moneyphp/money/zipball/ddf6a86b574808f8844777ed4e8c4f92a10dac9b",
+                "reference": "ddf6a86b574808f8844777ed4e8c4f92a10dac9b",
+                "shasum": ""
+            },
+            "require": {
+                "ext-bcmath": "*",
+                "ext-filter": "*",
+                "ext-json": "*",
+                "php": "~8.1.0 || ~8.2.0 || ~8.3.0 || ~8.4.0"
+            },
+            "require-dev": {
+                "cache/taggable-cache": "^1.1.0",
+                "doctrine/coding-standard": "^12.0",
+                "doctrine/instantiator": "^1.5.0 || ^2.0",
+                "ext-gmp": "*",
+                "ext-intl": "*",
+                "florianv/exchanger": "^2.8.1",
+                "florianv/swap": "^4.3.0",
+                "moneyphp/crypto-currencies": "^1.1.0",
+                "moneyphp/iso-currencies": "^3.4",
+                "php-http/message": "^1.16.0",
+                "php-http/mock-client": "^1.6.0",
+                "phpbench/phpbench": "^1.2.5",
+                "phpunit/phpunit": "^10.5.9",
+                "psalm/plugin-phpunit": "^0.18.4",
+                "psr/cache": "^1.0.1 || ^2.0 || ^3.0",
+                "vimeo/psalm": "~5.20.0"
+            },
+            "suggest": {
+                "ext-gmp": "Calculate without integer limits",
+                "ext-intl": "Format Money objects with intl",
+                "florianv/exchanger": "Exchange rates library for PHP",
+                "florianv/swap": "Exchange rates library for PHP",
+                "psr/cache-implementation": "Used for Currency caching"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Money\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mathias Verraes",
+                    "email": "mathias@verraes.net",
+                    "homepage": "http://verraes.net"
+                },
+                {
+                    "name": "Márk Sági-Kazár",
+                    "email": "mark.sagikazar@gmail.com"
+                },
+                {
+                    "name": "Frederik Bosch",
+                    "email": "f.bosch@genkgo.nl"
+                }
+            ],
+            "description": "PHP implementation of Fowler's Money pattern",
+            "homepage": "http://moneyphp.org",
+            "keywords": [
+                "Value Object",
+                "money",
+                "vo"
+            ],
+            "support": {
+                "issues": "https://github.com/moneyphp/money/issues",
+                "source": "https://github.com/moneyphp/money/tree/v4.6.0"
+            },
+            "time": "2024-11-22T10:59:03+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -8306,7 +8394,7 @@
             "dist": {
                 "type": "path",
                 "url": "./addons/category",
-                "reference": "3c18d71ca8d85a65a1ee7210019d3b7d5f9ce233"
+                "reference": "22bc3f902eddbe53cfe699171699ccc1ba8a83f3"
             },
             "require": {
                 "filament/filament": "^3.0",
@@ -8390,7 +8478,7 @@
             "dist": {
                 "type": "path",
                 "url": "./addons/evaluate",
-                "reference": "e5d5c5338743cf859c63f0005dc7c428b95abdd5"
+                "reference": "a80e2099539d0e096bc679ca908c53f7d2362b9a"
             },
             "require": {
                 "filament/filament": "^3.0",
@@ -8480,7 +8568,7 @@
             "dist": {
                 "type": "path",
                 "url": "./addons/order",
-                "reference": "555a35702c69a32077165ce0224f59b773f29ca0"
+                "reference": "a57451000d54947da79f565762278a80aa1d9d1a"
             },
             "require": {
                 "filament/filament": "^3.0",
@@ -8570,7 +8658,7 @@
             "dist": {
                 "type": "path",
                 "url": "./addons/product",
-                "reference": "a27171b671c3e4e235f28f67e8cf38b5d04e97e3"
+                "reference": "fbe709824c76f440c26fa395131a3f16e96e7fbc"
             },
             "require": {
                 "filament/filament": "^3.0",
@@ -8661,7 +8749,7 @@
             "dist": {
                 "type": "path",
                 "url": "./addons/shop",
-                "reference": "b21e7acff5bbafb5a921e024732ec86e60d128a8"
+                "reference": "a4f22aa5af37c5885cdbf4ebb68421355ab04d0d"
             },
             "require": {
                 "filament/filament": "^3.0",
@@ -8752,7 +8840,7 @@
             "dist": {
                 "type": "path",
                 "url": "./addons/support",
-                "reference": "ec00dd1fe4a5fa07f37a2c2c7a7e0e9fa346828a"
+                "reference": "b1ce591a2811a950e4879dc06714af3be9746f2d"
             },
             "require": {
                 "codeat3/blade-element-plus-icons": "^1.0",
@@ -8850,7 +8938,7 @@
             "dist": {
                 "type": "path",
                 "url": "./addons/user",
-                "reference": "a0f81cb12b0854c7c939a215ba5fd39be11d40bb"
+                "reference": "757d39f31e7c18ad399a0eed63f8fdfbdd22ba67"
             },
             "require": {
                 "filament/filament": "^3.0",
@@ -11849,8 +11937,8 @@
     "stability-flags": {
         "wsmallnews/category": 20,
         "wsmallnews/evaluate": 20,
-        "wsmallnews/product": 20,
         "wsmallnews/order": 20,
+        "wsmallnews/product": 20,
         "wsmallnews/shop": 20,
         "wsmallnews/support": 20,
         "wsmallnews/user": 20
@@ -11861,5 +11949,5 @@
         "php": "^8.2"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.3.0"
+    "plugin-api-version": "2.6.0"
 }

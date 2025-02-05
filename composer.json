@@ -9,10 +9,11 @@
         "filament/filament": "^3.2",
         "laravel/framework": "^11.9",
         "laravel/tinker": "^2.9",
+        "moneyphp/money": "^4.6",
         "wsmallnews/category": "dev-main",
         "wsmallnews/evaluate": "dev-main",
-        "wsmallnews/product": "dev-main",
         "wsmallnews/order": "dev-main",
+        "wsmallnews/product": "dev-main",
         "wsmallnews/shop": "dev-main",
         "wsmallnews/support": "dev-main",
         "wsmallnews/user": "dev-main"
