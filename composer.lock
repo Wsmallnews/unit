@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f0820d6561484e3e8d688f46b779d35f",
+    "content-hash": "8cf0fa18928eee9191649c59d39a6a54",
     "packages": [
         {
             "name": "anourvalar/eloquent-serialize",
@@ -374,6 +374,68 @@
                 }
             ],
             "time": "2024-02-09T16:56:22+00:00"
+        },
+        {
+            "name": "cknow/laravel-money",
+            "version": "v8.3.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/cknow/laravel-money.git",
+                "reference": "fdca65e8ce9a3be4d81c828ebebc671fa1cc7440"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://mirrors.huaweicloud.com/repository/php/cknow/laravel-money/v8.3.1/cknow-laravel-money-v8.3.1.zip",
+                "reference": "fdca65e8ce9a3be4d81c828ebebc671fa1cc7440",
+                "shasum": ""
+            },
+            "require": {
+                "ext-intl": "*",
+                "ext-json": "*",
+                "illuminate/support": "^9.0|^10.0|^11.0",
+                "illuminate/view": "^9.0|^10.0|^11.0",
+                "moneyphp/money": "^4.6",
+                "php": "^8.1"
+            },
+            "require-dev": {
+                "graham-campbell/testbench": "^6.1",
+                "illuminate/filesystem": "^9.0|^10.0|^11.0",
+                "mockery/mockery": "^1.6",
+                "phpunit/phpunit": "^10.5"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Cknow\\Money\\MoneyServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/helpers.php"
+                ],
+                "psr-4": {
+                    "Cknow\\Money\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ricardo Gobbo de Souza",
+                    "email": "ricardogobbosouza@yahoo.com.br"
+                }
+            ],
+            "description": "Laravel Money",
+            "homepage": "https://github.com/cknow/laravel-money",
+            "keywords": [
+                "currency",
+                "laravel",
+                "money"
+            ],
+            "time": "2025-01-03T13:25:38+00:00"
         },
         {
             "name": "codeat3/blade-element-plus-icons",
@@ -8394,7 +8456,7 @@
             "dist": {
                 "type": "path",
                 "url": "./addons/category",
-                "reference": "22bc3f902eddbe53cfe699171699ccc1ba8a83f3"
+                "reference": "f23ce18831c7b5c666403e6a465db8362c142045"
             },
             "require": {
                 "filament/filament": "^3.0",
@@ -8658,7 +8720,7 @@
             "dist": {
                 "type": "path",
                 "url": "./addons/product",
-                "reference": "fbe709824c76f440c26fa395131a3f16e96e7fbc"
+                "reference": "ff98ec55cc4a06458a3b94730426eead958ac759"
             },
             "require": {
                 "filament/filament": "^3.0",
@@ -8840,7 +8902,7 @@
             "dist": {
                 "type": "path",
                 "url": "./addons/support",
-                "reference": "b1ce591a2811a950e4879dc06714af3be9746f2d"
+                "reference": "33a9d9201ff3cca5a07f189323a9031475d952c8"
             },
             "require": {
                 "codeat3/blade-element-plus-icons": "^1.0",
@@ -11949,5 +12011,5 @@
         "php": "^8.2"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.6.0"
+    "plugin-api-version": "2.3.0"
 }
