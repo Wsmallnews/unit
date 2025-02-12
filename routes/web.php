@@ -3,6 +3,7 @@
 use App\Livewire\Repeater;
 use Illuminate\Support\Facades\Route;
 
+use App\Livewire\DeepSeek;
 use Money\Currency;
 use Money\Money;
 use Money\Currencies\BitcoinCurrencies;
@@ -12,6 +13,9 @@ use Money\Formatter\BitcoinMoneyFormatter;
 use Money\Formatter\IntlMoneyFormatter;
 use Money\Formatter\DecimalMoneyFormatter;
 use Money\Formatter\IntlLocalizedDecimalFormatter;
+
+Route::get('/deepseek', DeepSeek::class);
+
 
 Route::get('/', function () {
 
