@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\PayController;
 use App\Livewire\Repeater;
 use Illuminate\Support\Facades\Route;
 
@@ -13,6 +14,10 @@ use Money\Formatter\BitcoinMoneyFormatter;
 use Money\Formatter\IntlMoneyFormatter;
 use Money\Formatter\DecimalMoneyFormatter;
 use Money\Formatter\IntlLocalizedDecimalFormatter;
+
+
+Route::get('/pay', PayController::class . '@pay');
+Route::get('/notify/{payment}', PayController::class . '@notify');
 
 Route::get('/deepseek', DeepSeek::class);
 

@@ -14,6 +14,7 @@
         "wsmallnews/category": "dev-main",
         "wsmallnews/evaluate": "dev-main",
         "wsmallnews/order": "dev-main",
+        "wsmallnews/pay": "dev-main",
         "wsmallnews/product": "dev-main",
         "wsmallnews/shop": "dev-main",
         "wsmallnews/support": "dev-main",
@@ -78,7 +79,7 @@
             "php-http/discovery": true
         }
     },
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "prefer-stable": true,
     "repositories": {
         "category": {
@@ -88,6 +89,10 @@
         "evaluate": {
             "type": "path",
             "url": "./addons/evaluate"
+        },
+        "pay": {
+            "type": "path",
+            "url": "./addons/pay"
         },
         "product": {
             "type": "path",

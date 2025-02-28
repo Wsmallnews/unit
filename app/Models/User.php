@@ -8,11 +8,22 @@ use Filament\Panel;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
+use Wsmallnews\Order\Contracts\BuyerInterface;
+use Wsmallnews\Order\Traits\Buyerable;
+use Wsmallnews\Pay\Contracts\PayerInterface;
+use Wsmallnews\Pay\Traits\UserPayerable;
+use Wsmallnews\Support\Traits\Morphable;
+use Wsmallnews\User\Contracts\UserInterface as SnUserInterface;
+use Wsmallnews\User\Traits\Userable;
 
-class User extends Authenticatable implements FilamentUser
+class User extends Authenticatable implements FilamentUser, SnUserInterface, PayerInterface, BuyerInterface
 {
     /** @use HasFactory<\Database\Factories\UserFactory> */
     use HasFactory, Notifiable;
+    use Userable;
+    use UserPayerable;
+    use Buyerable;
+    use Morphable;
 
     /**
      * The attributes that are mass assignable.
