@@ -64,8 +64,6 @@ class PayController extends Controller
 
     public function pay(Request $request)
     {
-
-
         $payment = $request->input('payment', 'wechat');
 
         auth()->loginUsingId(1);

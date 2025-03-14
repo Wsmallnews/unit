@@ -9233,7 +9233,7 @@
             "dist": {
                 "type": "path",
                 "url": "./addons/order",
-                "reference": "008b1a633072ac380d5688cbe37421ce46cd07bf"
+                "reference": "5fcee9cd1a933e77827fb005828e38ba71913e79"
             },
             "require": {
                 "filament/filament": "^3.0",
@@ -9323,7 +9323,7 @@
             "dist": {
                 "type": "path",
                 "url": "./addons/pay",
-                "reference": "6c4e1330c645c0b44eae9dc0bffa8cff2a124604"
+                "reference": "87021cbf3d8cecfb47c8c814101f0c5122da0774"
             },
             "require": {
                 "filament/filament": "^3.0",
@@ -9414,7 +9414,7 @@
             "dist": {
                 "type": "path",
                 "url": "./addons/product",
-                "reference": "bd9eb6943e59a27d07cf59fa5910a2f7c1ae4d7e"
+                "reference": "22842a01c1eb458c65ebfb2e93e53e36bfa05bc6"
             },
             "require": {
                 "filament/filament": "^3.0",
@@ -9505,7 +9505,7 @@
             "dist": {
                 "type": "path",
                 "url": "./addons/shop",
-                "reference": "48405e01035a209bb7efb3db47fcec9512ab40aa"
+                "reference": "dc9299367d2796cd2d90267c960c5513a284a659"
             },
             "require": {
                 "filament/filament": "^3.0",
@@ -9596,7 +9596,7 @@
             "dist": {
                 "type": "path",
                 "url": "./addons/support",
-                "reference": "419b16bd5f16734d9e7d4f166f196a7550a0f5eb"
+                "reference": "64a963159bb4e843b2a0a36f4c15e369f728a140"
             },
             "require": {
                 "codeat3/blade-element-plus-icons": "^1.0",
@@ -9694,7 +9694,7 @@
             "dist": {
                 "type": "path",
                 "url": "./addons/user",
-                "reference": "454f153441d24a793c2f60677a466005e6103c0e"
+                "reference": "b3fd0fa91d21951d55c433d40f55c629a77a90c5"
             },
             "require": {
                 "filament/filament": "^3.0",
@@ -13175,5 +13175,5 @@
         "php": "^8.2"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.6.0"
+    "plugin-api-version": "2.3.0"
 }

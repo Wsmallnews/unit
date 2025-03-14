@@ -1,7 +1,9 @@
+import FilamentPreset from './tailwind.config.preset.js'
 import defaultTheme from 'tailwindcss/defaultTheme';
 
 /** @type {import('tailwindcss').Config} */
 export default {
+    presets: [FilamentPreset],
     content: [
         './vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php',
         './vendor/wsmallnews/**/*.blade.php',
