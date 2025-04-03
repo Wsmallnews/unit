@@ -3,6 +3,7 @@
 use App\Http\Controllers\PayController;
 use App\Http\Controllers\TestController;
 use App\Livewire\Repeater;
+use App\Livewire\SkusWidget;
 use Illuminate\Support\Facades\Route;
 
 use App\Livewire\DeepSeek;
@@ -22,6 +23,7 @@ Route::get('/money', TestController::class . '@money');
 Route::get('/notify/{payment}', PayController::class . '@notify');
 
 Route::get('/deepseek', DeepSeek::class);
+Route::get('/skus-widget', SkusWidget::class);
 
 
 Route::get('/', function () {
