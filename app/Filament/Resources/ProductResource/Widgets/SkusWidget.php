@@ -23,6 +23,8 @@ class SkusWidget extends Widget implements HasActions, HasForms
 
     public ?array $data = [];
 
+    public ?array $skus = [];
+
     protected static string $view = 'filament.resources.product-resource.widgets.skus-widget';
 
 
@@ -38,15 +40,17 @@ class SkusWidget extends Widget implements HasActions, HasForms
         return Action::make('operateSku')
             ->form([
                 Components\Repeater::make('skus')
-                    ->relationship('skus')
-                    ->simple(
-                        Components\TextInput::make('name')->required(),
-                    )
+                    ->schema([
+                        Components\TextInput::make('name')->required()->columnSpan(1),
+                        Components\Fieldset::make('children')->schema([
+                            Components\Repeater::make('children')->hiddenLabel()->simple(
+                                Components\TextInput::make('name')->required()->columnSpanFull(),
+                            )->grid(3),
+                        ])->columns(1)->columnSpanFull()
+                    ])->columns(3)
             ])
-            ->model($this->record)
-            ->requiresConfirmation()
-            ->action(function () {
-                dd(111);
+            ->action(function ($data) {
+                $this->skus = $data['skus'];
             });
     }
 

@@ -1,6 +1,13 @@
 <x-filament-widgets::widget>
     <x-filament::section>
-        <form wire:submit="create">
+        {{ $this->operateSkuAction }}
+
+
+        @foreach ($skus as $sku)
+            {{$sku['name']}}: @foreach ($sku['children'] as $child) {{$child}}@endforeach
+        @endforeach
+
+        {{-- <form wire:submit="create">
             @foreach (\Wsmallnews\Product\Enums\ProductSkuType::cases() as $value => $label)
                 <div class="flex ">
                     <label class="flex gap-x-3">
@@ -18,7 +25,6 @@
 
                             <p class="text-gray-500 dark:text-gray-400">
                                 这是描述内容
-                                {{-- {{ $getDescription($value) }} --}}
                             </p>
                         </div>
                     </label>
@@ -27,16 +33,15 @@
 
 
             {{ $this->operateSkuAction }}
-            {{-- {{ $this->updateAuthorAction }} --}}
 
 
             {{ $this->form }}
 
-            {{-- {{ $this->saveAction }} --}}
 
-            <x-filament-actions::modals />
-        </form>
-
+        </form> --}}
+        <x-filament-actions::modals />
     </x-filament::section>
     
 </x-filament-widgets::widget>
+
+
