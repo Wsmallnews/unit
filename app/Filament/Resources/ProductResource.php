@@ -17,6 +17,7 @@ use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 use Wsmallnews\Product\Repositories\Fields as FieldsRepository;
 use Wsmallnews\Product\Repositories\Columns as ColumnsRepository;
+use Filament\Forms\Components\SpatieTagsInput;
 
 class ProductResource extends Resource
 {
@@ -32,6 +33,7 @@ class ProductResource extends Resource
             ->schema([
                 FieldsRepository::type()->columnSpan(2),
                 FieldsRepository::title()->columnSpan(2),
+                SpatieTagsInput::make('tags')->type('product'),
             ]);
     }
 
