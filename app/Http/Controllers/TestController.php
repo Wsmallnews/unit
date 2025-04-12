@@ -34,7 +34,8 @@ class TestController extends Controller
 
         // $a = Money::USD(500)->formatByCurrencySymbol(); // $5.00
         // dd($a);
-
+        $a = Money::parse(5236, 'CNY', false);
+        dd($a->getAmount(), $a->format());
 
         echo sn_currency()->getSymbol();exit;
 
