@@ -7,6 +7,7 @@ use App\Livewire\SkusWidget;
 use Illuminate\Support\Facades\Route;
 
 use App\Livewire\DeepSeek;
+use App\Livewire\TestImage;
 use Money\Currency;
 use Money\Money;
 use Money\Currencies\BitcoinCurrencies;
@@ -23,6 +24,7 @@ Route::get('/money', TestController::class . '@money');
 Route::get('/notify/{payment}', PayController::class . '@notify');
 
 Route::get('/deepseek', DeepSeek::class);
+Route::get('/test-image', TestImage::class);
 Route::get('/skus-widget', SkusWidget::class);
 
 

@@ -74,16 +74,16 @@
         },
         {
             "name": "awcodes/filament-table-repeater",
-            "version": "v3.1.0",
+            "version": "v3.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/awcodes/filament-table-repeater.git",
-                "reference": "beaa9cdb25b4211b00c675bbcbf2584cd777536c"
+                "reference": "20f67f729a21a28963b0c07ffbb3ffc7a6fd88f0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/awcodes/filament-table-repeater/zipball/beaa9cdb25b4211b00c675bbcbf2584cd777536c",
-                "reference": "beaa9cdb25b4211b00c675bbcbf2584cd777536c",
+                "url": "https://api.github.com/repos/awcodes/filament-table-repeater/zipball/20f67f729a21a28963b0c07ffbb3ffc7a6fd88f0",
+                "reference": "20f67f729a21a28963b0c07ffbb3ffc7a6fd88f0",
                 "shasum": ""
             },
             "require": {
@@ -137,7 +137,7 @@
             ],
             "support": {
                 "issues": "https://github.com/awcodes/filament-table-repeater/issues",
-                "source": "https://github.com/awcodes/filament-table-repeater/tree/v3.1.0"
+                "source": "https://github.com/awcodes/filament-table-repeater/tree/v3.1.1"
             },
             "funding": [
                 {
@@ -145,7 +145,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-11-13T18:07:04+00:00"
+            "time": "2025-04-11T19:26:25+00:00"
         },
         {
             "name": "bacon/bacon-qr-code",
@@ -2618,6 +2618,150 @@
             "time": "2025-02-03T10:55:03+00:00"
         },
         {
+            "name": "intervention/gif",
+            "version": "4.2.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Intervention/gif.git",
+                "reference": "5999eac6a39aa760fb803bc809e8909ee67b451a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Intervention/gif/zipball/5999eac6a39aa760fb803bc809e8909ee67b451a",
+                "reference": "5999eac6a39aa760fb803bc809e8909ee67b451a",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.1"
+            },
+            "require-dev": {
+                "phpstan/phpstan": "^2.1",
+                "phpunit/phpunit": "^10.0 || ^11.0  || ^12.0",
+                "slevomat/coding-standard": "~8.0",
+                "squizlabs/php_codesniffer": "^3.8"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Intervention\\Gif\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Oliver Vogel",
+                    "email": "oliver@intervention.io",
+                    "homepage": "https://intervention.io/"
+                }
+            ],
+            "description": "Native PHP GIF Encoder/Decoder",
+            "homepage": "https://github.com/intervention/gif",
+            "keywords": [
+                "animation",
+                "gd",
+                "gif",
+                "image"
+            ],
+            "support": {
+                "issues": "https://github.com/Intervention/gif/issues",
+                "source": "https://github.com/Intervention/gif/tree/4.2.2"
+            },
+            "funding": [
+                {
+                    "url": "https://paypal.me/interventionio",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/Intervention",
+                    "type": "github"
+                },
+                {
+                    "url": "https://ko-fi.com/interventionphp",
+                    "type": "ko_fi"
+                }
+            ],
+            "time": "2025-03-29T07:46:21+00:00"
+        },
+        {
+            "name": "intervention/image",
+            "version": "3.11.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Intervention/image.git",
+                "reference": "ebbb711871fb261c064cf4c422f5f3c124fe1842"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Intervention/image/zipball/ebbb711871fb261c064cf4c422f5f3c124fe1842",
+                "reference": "ebbb711871fb261c064cf4c422f5f3c124fe1842",
+                "shasum": ""
+            },
+            "require": {
+                "ext-mbstring": "*",
+                "intervention/gif": "^4.2",
+                "php": "^8.1"
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.6",
+                "phpstan/phpstan": "^2.1",
+                "phpunit/phpunit": "^10.0 || ^11.0 || ^12.0",
+                "slevomat/coding-standard": "~8.0",
+                "squizlabs/php_codesniffer": "^3.8"
+            },
+            "suggest": {
+                "ext-exif": "Recommended to be able to read EXIF data properly."
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Intervention\\Image\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Oliver Vogel",
+                    "email": "oliver@intervention.io",
+                    "homepage": "https://intervention.io/"
+                }
+            ],
+            "description": "PHP image manipulation",
+            "homepage": "https://image.intervention.io/",
+            "keywords": [
+                "gd",
+                "image",
+                "imagick",
+                "resize",
+                "thumbnail",
+                "watermark"
+            ],
+            "support": {
+                "issues": "https://github.com/Intervention/image/issues",
+                "source": "https://github.com/Intervention/image/tree/3.11.2"
+            },
+            "funding": [
+                {
+                    "url": "https://paypal.me/interventionio",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/Intervention",
+                    "type": "github"
+                },
+                {
+                    "url": "https://ko-fi.com/interventionphp",
+                    "type": "ko_fi"
+                }
+            ],
+            "time": "2025-02-27T13:08:55+00:00"
+        },
+        {
             "name": "kirschbaum-development/eloquent-power-joins",
             "version": "4.2.3",
             "source": {
@@ -3790,16 +3934,16 @@
         },
         {
             "name": "livewire/livewire",
-            "version": "v3.6.2",
+            "version": "v3.6.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/livewire/livewire.git",
-                "reference": "8f8914731f5eb43b6bb145d87c8d5a9edfc89313"
+                "reference": "56aa1bb63a46e06181c56fa64717a7287e19115e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/livewire/livewire/zipball/8f8914731f5eb43b6bb145d87c8d5a9edfc89313",
-                "reference": "8f8914731f5eb43b6bb145d87c8d5a9edfc89313",
+                "url": "https://api.github.com/repos/livewire/livewire/zipball/56aa1bb63a46e06181c56fa64717a7287e19115e",
+                "reference": "56aa1bb63a46e06181c56fa64717a7287e19115e",
                 "shasum": ""
             },
             "require": {
@@ -3854,7 +3998,7 @@
             "description": "A front-end framework for Laravel.",
             "support": {
                 "issues": "https://github.com/livewire/livewire/issues",
-                "source": "https://github.com/livewire/livewire/tree/v3.6.2"
+                "source": "https://github.com/livewire/livewire/tree/v3.6.3"
             },
             "funding": [
                 {
@@ -3862,7 +4006,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-03-12T20:24:15+00:00"
+            "time": "2025-04-12T22:26:52+00:00"
         },
         {
             "name": "maennchen/zipstream-php",
@@ -5047,6 +5191,91 @@
                 "source": "https://github.com/phpstan/phpdoc-parser/tree/2.1.0"
             },
             "time": "2025-02-19T13:28:12+00:00"
+        },
+        {
+            "name": "plank/laravel-mediable",
+            "version": "6.3.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/plank/laravel-mediable.git",
+                "reference": "c769d6347cab33b52ddbc06589f16ee67fc7b3f8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/plank/laravel-mediable/zipball/c769d6347cab33b52ddbc06589f16ee67fc7b3f8",
+                "reference": "c769d6347cab33b52ddbc06589f16ee67fc7b3f8",
+                "shasum": ""
+            },
+            "require": {
+                "ext-fileinfo": "*",
+                "guzzlehttp/guzzle": "^7.9.1",
+                "guzzlehttp/psr7": "^2.7",
+                "illuminate/database": "^11.34.0|^12.0",
+                "illuminate/filesystem": "^11.34.0|^12.0",
+                "illuminate/support": "^11.34.0|^12.0",
+                "intervention/image": "^2.7.1|^3.9.1",
+                "league/flysystem": "^3.29.1",
+                "php": ">=8.1.0",
+                "spatie/image-optimizer": "^1.8",
+                "symfony/http-foundation": "^6.0.3|^7.2",
+                "symfony/mime": "^6.0|^7.2"
+            },
+            "require-dev": {
+                "aws/aws-sdk-php": "^3.340.0",
+                "doctrine/dbal": "^3.9.3",
+                "guzzlehttp/promises": "^1.5.1|^2.0",
+                "laravel/legacy-factories": "^1.4.0",
+                "league/flysystem-aws-s3-v3": "^3.29.0",
+                "mockery/mockery": "^1.6.12",
+                "orchestra/testbench": "^9.6.1|^10.0",
+                "php-coveralls/php-coveralls": "^2.7.0",
+                "phpstan/phpstan": "^2.0.3",
+                "phpunit/phpunit": "^11.5.10",
+                "vlucas/phpdotenv": "^5.6.1"
+            },
+            "suggest": {
+                "intervention/image-laravel": "Laravel bindings for the intervention/image package used for image manipulation"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "aliases": {
+                        "MediaUploader": "Plank\\Mediable\\Facades\\MediaUploader",
+                        "ImageManipulator": "Plank\\Mediable\\Facades\\ImageManipulator"
+                    },
+                    "providers": [
+                        "Plank\\Mediable\\MediableServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Plank\\Mediable\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Sean Fraser",
+                    "email": "sean@plankdesign.com"
+                }
+            ],
+            "description": "A package for easily uploading and attaching media files to models with Laravel",
+            "keywords": [
+                "eloquent",
+                "image",
+                "laravel",
+                "media",
+                "uploader"
+            ],
+            "support": {
+                "issues": "https://github.com/plank/laravel-mediable/issues",
+                "source": "https://github.com/plank/laravel-mediable/tree/6.3.1"
+            },
+            "time": "2025-03-06T02:19:25+00:00"
         },
         {
             "name": "postare/blade-mdi",
@@ -6496,16 +6725,16 @@
         },
         {
             "name": "spatie/laravel-package-tools",
-            "version": "1.92.3",
+            "version": "1.92.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/laravel-package-tools.git",
-                "reference": "45001525ccbb3804edb46a3410157f40de2ddd89"
+                "reference": "d20b1969f836d210459b78683d85c9cd5c5f508c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/laravel-package-tools/zipball/45001525ccbb3804edb46a3410157f40de2ddd89",
-                "reference": "45001525ccbb3804edb46a3410157f40de2ddd89",
+                "url": "https://api.github.com/repos/spatie/laravel-package-tools/zipball/d20b1969f836d210459b78683d85c9cd5c5f508c",
+                "reference": "d20b1969f836d210459b78683d85c9cd5c5f508c",
                 "shasum": ""
             },
             "require": {
@@ -6516,6 +6745,7 @@
                 "mockery/mockery": "^1.5",
                 "orchestra/testbench": "^7.7|^8.0|^9.0|^10.0",
                 "pestphp/pest": "^1.23|^2.1|^3.1",
+                "phpunit/php-code-coverage": "^9.0|^10.0|^11.0",
                 "phpunit/phpunit": "^9.5.24|^10.5|^11.5",
                 "spatie/pest-plugin-test-time": "^1.1|^2.2"
             },
@@ -6544,7 +6774,7 @@
             ],
             "support": {
                 "issues": "https://github.com/spatie/laravel-package-tools/issues",
-                "source": "https://github.com/spatie/laravel-package-tools/tree/1.92.3"
+                "source": "https://github.com/spatie/laravel-package-tools/tree/1.92.4"
             },
             "funding": [
                 {
@@ -6552,20 +6782,20 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-04-10T21:50:03+00:00"
+            "time": "2025-04-11T15:27:14+00:00"
         },
         {
             "name": "spatie/laravel-settings",
-            "version": "3.4.3",
+            "version": "3.4.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/laravel-settings.git",
-                "reference": "bc137476b2d0072c118634905a9068c1fdab88ca"
+                "reference": "fd0eb5a832131b56cd98834b93be3425ee28e333"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/laravel-settings/zipball/bc137476b2d0072c118634905a9068c1fdab88ca",
-                "reference": "bc137476b2d0072c118634905a9068c1fdab88ca",
+                "url": "https://api.github.com/repos/spatie/laravel-settings/zipball/fd0eb5a832131b56cd98834b93be3425ee28e333",
+                "reference": "fd0eb5a832131b56cd98834b93be3425ee28e333",
                 "shasum": ""
             },
             "require": {
@@ -6625,7 +6855,7 @@
             ],
             "support": {
                 "issues": "https://github.com/spatie/laravel-settings/issues",
-                "source": "https://github.com/spatie/laravel-settings/tree/3.4.3"
+                "source": "https://github.com/spatie/laravel-settings/tree/3.4.4"
             },
             "funding": [
                 {
@@ -6637,7 +6867,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-04-11T09:35:44+00:00"
+            "time": "2025-04-11T11:35:56+00:00"
         },
         {
             "name": "spatie/laravel-tags",
@@ -9152,16 +9382,16 @@
         },
         {
             "name": "technikermathe/blade-lucide-icons",
-            "version": "v3.94.0",
+            "version": "v3.95.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PascaleBeier/blade-lucide-icons.git",
-                "reference": "e9e53bbaf9e92203464d1ba1fe8b54f7f468d088"
+                "reference": "2b424be94296bdd22f2c175c6f627a92ee335e19"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PascaleBeier/blade-lucide-icons/zipball/e9e53bbaf9e92203464d1ba1fe8b54f7f468d088",
-                "reference": "e9e53bbaf9e92203464d1ba1fe8b54f7f468d088",
+                "url": "https://api.github.com/repos/PascaleBeier/blade-lucide-icons/zipball/2b424be94296bdd22f2c175c6f627a92ee335e19",
+                "reference": "2b424be94296bdd22f2c175c6f627a92ee335e19",
                 "shasum": ""
             },
             "require": {
@@ -9211,9 +9441,9 @@
             ],
             "support": {
                 "issues": "https://github.com/PascaleBeier/blade-lucide-icons/issues",
-                "source": "https://github.com/PascaleBeier/blade-lucide-icons/tree/v3.94.0"
+                "source": "https://github.com/PascaleBeier/blade-lucide-icons/tree/v3.95.0"
             },
-            "time": "2025-04-03T00:07:01+00:00"
+            "time": "2025-04-14T00:07:34+00:00"
         },
         {
             "name": "tijsverkoyen/css-to-inline-styles",
@@ -9492,7 +9722,7 @@
             "dist": {
                 "type": "path",
                 "url": "./addons/category",
-                "reference": "85cc7fa7d02a479b93005b9e150a90dd59f2ef24"
+                "reference": "b032a2353c03b08b9ca8076cad92646becdaacdd"
             },
             "require": {
                 "filament/filament": "^3.0",
@@ -9847,7 +10077,7 @@
             "dist": {
                 "type": "path",
                 "url": "./addons/product",
-                "reference": "74fb8eac44bf1e9e9595dbb307e6899f1c172128"
+                "reference": "6a237ea748ea189dd66f025ae1b3a0bf4bab5299"
             },
             "require": {
                 "filament/filament": "^3.0",
@@ -9938,7 +10168,7 @@
             "dist": {
                 "type": "path",
                 "url": "./addons/shop",
-                "reference": "df84bcb2acbd6d071ef80aef3478c44d4d9148aa"
+                "reference": "c87b1346b7c6f5de4f00f37c3fbc29e7c3c2ff98"
             },
             "require": {
                 "filament/filament": "^3.0",
@@ -10029,7 +10259,7 @@
             "dist": {
                 "type": "path",
                 "url": "./addons/support",
-                "reference": "ed9fb4bc3af95e96f9497ad40e1565ca9a949928"
+                "reference": "bbbdbb53733d68edacc09057811d6043559451b4"
             },
             "require": {
                 "codeat3/blade-element-plus-icons": "^1.0",
@@ -10040,6 +10270,7 @@
                 "filament/spatie-laravel-tags-plugin": "^3.0",
                 "overtrue/easy-sms": "^3.0",
                 "php": "^8.1",
+                "plank/laravel-mediable": "^6.0",
                 "postare/blade-mdi": "^1.1",
                 "spatie/laravel-package-tools": "^1.15.0",
                 "technikermathe/blade-lucide-icons": "^3.0"
@@ -10291,16 +10522,16 @@
         },
         {
             "name": "yansongda/pay",
-            "version": "v3.7.13",
+            "version": "v3.7.14",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yansongda/pay.git",
-                "reference": "6e1678f44acb91ba78900eb74e307de415a54e9d"
+                "reference": "a000bd7dec9c98f64e70173559b9656702b21a79"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yansongda/pay/zipball/6e1678f44acb91ba78900eb74e307de415a54e9d",
-                "reference": "6e1678f44acb91ba78900eb74e307de415a54e9d",
+                "url": "https://api.github.com/repos/yansongda/pay/zipball/a000bd7dec9c98f64e70173559b9656702b21a79",
+                "reference": "a000bd7dec9c98f64e70173559b9656702b21a79",
                 "shasum": ""
             },
             "require": {
@@ -10360,7 +10591,7 @@
                 "issues": "https://github.com/yansongda/pay/issues",
                 "source": "https://github.com/yansongda/pay"
             },
-            "time": "2025-02-11T04:04:44+00:00"
+            "time": "2025-04-12T02:09:16+00:00"
         },
         {
             "name": "yansongda/supports",
@@ -11946,16 +12177,16 @@
         },
         {
             "name": "phpdocumentor/reflection-docblock",
-            "version": "5.6.1",
+            "version": "5.6.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpDocumentor/ReflectionDocBlock.git",
-                "reference": "e5e784149a09bd69d9a5e3b01c5cbd2e2bd653d8"
+                "reference": "92dde6a5919e34835c506ac8c523ef095a95ed62"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpDocumentor/ReflectionDocBlock/zipball/e5e784149a09bd69d9a5e3b01c5cbd2e2bd653d8",
-                "reference": "e5e784149a09bd69d9a5e3b01c5cbd2e2bd653d8",
+                "url": "https://api.github.com/repos/phpDocumentor/ReflectionDocBlock/zipball/92dde6a5919e34835c506ac8c523ef095a95ed62",
+                "reference": "92dde6a5919e34835c506ac8c523ef095a95ed62",
                 "shasum": ""
             },
             "require": {
@@ -12004,9 +12235,9 @@
             "description": "With this component, a library can provide support for annotations via DocBlocks or otherwise retrieve information that is embedded in a DocBlock.",
             "support": {
                 "issues": "https://github.com/phpDocumentor/ReflectionDocBlock/issues",
-                "source": "https://github.com/phpDocumentor/ReflectionDocBlock/tree/5.6.1"
+                "source": "https://github.com/phpDocumentor/ReflectionDocBlock/tree/5.6.2"
             },
-            "time": "2024-12-07T09:39:29+00:00"
+            "time": "2025-04-13T19:20:35+00:00"
         },
         {
             "name": "phpunit/php-code-coverage",

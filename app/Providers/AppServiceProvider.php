@@ -23,6 +23,7 @@ class AppServiceProvider extends ServiceProvider
         // 注册模型别名
         Relation::enforceMorphMap([
             'user' => 'App\Models\User',
+            'test_image' => 'App\Models\TestImage',
         ]);
     }
 }
