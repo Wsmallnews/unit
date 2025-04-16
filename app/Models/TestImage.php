@@ -16,5 +16,17 @@ class TestImage extends Model implements MediableInterface
 
     protected $guarded = [];
     
-    
+    public function registerMediaVariants(): array
+    {
+        return [
+            'main' => [
+                'thumbnail',
+                'medium',
+                'large',
+            ],
+            'gallery' => [
+                'large',
+            ],
+        ];
+    }
 }
