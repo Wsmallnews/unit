@@ -11,6 +11,8 @@ use Plank\Mediable\Facades\ImageManipulator;
 use Plank\Mediable\ImageManipulation;
 use Intervention\Image\Image;
 use Plank\Mediable\Media;
+use Illuminate\Support\Str;
+use Livewire\Features\SupportFileUploads\TemporaryUploadedFile;
 
 class TestImage extends Component
 {
@@ -22,22 +24,34 @@ class TestImage extends Component
 
     public function mount()
     {
-        $post = TestImageModel::first();
-        $gallery = $post->getMedia('gallery')
-            ->where('variant_name', 'thumbnail')
-            ->first()
-            ->getUrl();
+        // echo  sha1('test-image-' . Str::ulid());
+        // echo "<br>";
+        // echo Str::ulid();
+        // echo "<br>";
+        // echo Str::uuid();
+        // exit;
 
-        echo $gallery;
 
-        $src = $post->getMedia('feature')
-            ->findVariant('thumbnail')
-            ->getUrl();
+        // $post = TestImageModel::first();
+        // $gallery = $post->getMedia('gallery')
+        //     ->where('variant_name', 'thumbnail')
+        //     ->first()
+        //     ->getUrl();
+
+        // echo $gallery;
+
+        // $src = $post->getMedia('feature')
+        //     ->findVariant('thumbnail')
+        //     ->getUrl();
 
         // dd($gallery);
 
     }
 
+    private function getUploadedFileNameForStorageScopeInfo(TemporaryUploadedFile $file, array $scopeInfo): string
+    {
+        return sha1($scopeInfo['scope_type'] . '-' . $scopeInfo['scope_id'] . '-' . hash_file('sha1', $file->getRealPath()));
+    }
 
     public function save(Request $request)
     {
@@ -45,10 +59,13 @@ class TestImage extends Component
         //     $image->resize(100, 100);
         // })->outputPngFormat();
 
+        $scopeInfo = ['scope_type' => 'shop', 'scope_id' => 5];
+        $filename = $this->getUploadedFileNameForStorageScopeInfo($this->image, $scopeInfo);
 
         $media = MediaUploader::fromSource($this->image)
             ->toDestination('public', 'test-image/' . date('Ymd'))
-            ->useHashForFilename('sha1')
+            ->useFilename($filename)
+            // ->useHashForFilename('sha1')
             // ->applyImageManipulation($manipulation)
             ->onDuplicateUpdate()
 
@@ -57,12 +74,12 @@ class TestImage extends Component
 
             ->upload();
 
-        $post = TestImageModel::first();
-        $post->attachMedia($media, ['gallery']);
+        // $post = TestImageModel::first();
+        // $post->attachMedia($media, ['gallery']);
 
-        $variantMedia = ImageManipulator::createImageVariant($media, 'thumbnail');
+        // $variantMedia = ImageManipulator::createImageVariant($media, 'thumbnail');
 
-        $post->attachMedia($variantMedia, ['gallery']);
+        // $post->attachMedia($variantMedia, ['gallery']);
 
         dd($media);
     }

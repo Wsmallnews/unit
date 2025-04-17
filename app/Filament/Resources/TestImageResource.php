@@ -12,7 +12,8 @@ use Filament\Tables;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
-
+use Filament\Infolists;
+use Filament\Infolists\Infolist;
 class TestImageResource extends Resource
 {
     protected static ?string $model = TestImage::class;
@@ -55,7 +56,9 @@ class TestImageResource extends Resource
     {
         return $table
             ->columns([
-                //
+                Tables\Columns\TextColumn::make('title')->label('标题'),
+                \Wsmallnews\Support\Filament\Tables\Columns\MediableImageColumn::make('image')->tag('main')->variant('thumbnail'),
+                \Wsmallnews\Support\Filament\Tables\Columns\MediableImageColumn::make('carousel')->tag('carousel')->variant('thumbnail'),
             ])
             ->filters([
                 Tables\Filters\TrashedFilter::make(),
@@ -70,6 +73,17 @@ class TestImageResource extends Resource
                     Tables\Actions\ForceDeleteBulkAction::make(),
                     Tables\Actions\RestoreBulkAction::make(),
                 ]),
+            ]);
+    }
+
+
+    public static function infolist(Infolist $infolist): Infolist
+    {
+        return $infolist
+            ->schema([
+                Infolists\Components\TextEntry::make('title')->label('标题'),
+                \Wsmallnews\Support\Filament\Infolists\Components\MediableImageEntry::make('image')->tag('main')->variant('medium'),
+                \Wsmallnews\Support\Filament\Infolists\Components\MediableImageEntry::make('carousel')->tag('carousel')->variant('medium'),
             ]);
     }
 
