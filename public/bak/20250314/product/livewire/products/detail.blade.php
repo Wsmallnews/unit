@@ -13,7 +13,7 @@ use Wsmallnews\Product\Product;
 <div class="w-full" x-data="detailManager({
     product: @js($product),
     skus: @js($skus),
-    skuPrices: @js($skuPrices)
+    variants: @js($variants)
 })">
 
     <div class="w-full grid grid-cols-1 sm:grid-cols-2 gap-4 p-4 bg-white">
@@ -87,18 +87,18 @@ use Wsmallnews\Product\Product;
     function detailManager({
         product,
         skus,
-        skuPrices
+        variants
     }) {
         return {
             product,
             skus,
-            skuPrices,
-            currentSkuPrice: {},
+            variants,
+            currentVariant: {},
             currentTab: null,
             init () {
                 if (this.product.sku_type == 'single') {
                     // 单规格
-                    this.currentSkuPrice = this.skuPrices[0];
+                    this.currentVariant = this.variants[0];
                 }
 
                 // 监听滚动条
@@ -118,11 +118,11 @@ use Wsmallnews\Product\Product;
                 console.log(e, 'skuChoosed');
 
                 let data = e.detail;
-                this.currentSkuPrice = data.skuPrice;
+                this.currentVariant = data.variant;
             },
             buy () {
                 // 检查用户是否选择了该选的东西
-                if (Object.keys(this.currentSkuPrice).length === 0) {
+                if (Object.keys(this.currentVariant).length === 0) {
                     // 提示
                     new FilamentNotification()
                         .title('请选择规格')
@@ -135,7 +135,7 @@ use Wsmallnews\Product\Product;
                 // set 设置 buyInfo 会触发一次 livewire/update 请求
                 this.$wire.set('buyInfo', {
                     product_id: this.product.id,
-                    product_sku_price_id: this.currentSkuPrice.id,
+                    product_variant_id: this.currentVariant.id,
                     product_num: 1,
                     product_attributes: []
                 });
@@ -153,7 +153,7 @@ use Wsmallnews\Product\Product;
                 //     from: 'product-detail',
                 //         relate_items: JSON.stringify([{
                 //         product_id: this.product.id,
-                //         product_sku_price_id: this.currentSkuPrice.id,
+                //         product_variant_id: this.currentVariant.id,
                 //         product_num: 1,
                 //         product_attributes: []
                 //     }]),

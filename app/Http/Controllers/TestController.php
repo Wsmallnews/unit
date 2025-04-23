@@ -8,7 +8,7 @@ use Wsmallnews\Order\Models\Order;
 use Yansongda\Pay\Pay as YansongdaPay;
 use Cknow\Money\Money;
 use Wsmallnews\Support\Features\Currency;
-use Wsmallnews\Product\Models\SkuPrice;
+use Wsmallnews\Product\Models\Variant;
 
 class TestController extends Controller
 {
@@ -77,33 +77,33 @@ class TestController extends Controller
 
         exit;
 
-        // $skuPrice = new SkuPrice;
-        // $skuPrice->price = 11212.32;
-        // $skuPrice->sku_type = 'single';
-        // $skuPrice->status = 'up';
+        // $variant = new Variant;
+        // $variant->price = 11212.32;
+        // $variant->sku_type = 'single';
+        // $variant->status = 'up';
 
 
-        // $skuPrice->save();
-        // // return response()->json($skuPrice);
+        // $variant->save();
+        // // return response()->json($variant);
 
-        // echo $skuPrice->price . "<br>";
-        // echo $skuPrice->price->formatByDecimal();
+        // echo $variant->price . "<br>";
+        // echo $variant->price->formatByDecimal();
         // exit;
 
 
-        $total = $skuPrice->price->add($skuPrice->status);
+        $total = $variant->price->add($variant->status);
         echo $total;exit;
 
 
-        $skuPrice = SkuPrice::find($skuPrice->id);
+        $variant = Variant::find($variant->id);
         echo "-------------";
-        echo $skuPrice->price;
+        echo $variant->price;
         echo "<br>";
-        echo $skuPrice->status;
+        echo $variant->status;
         
         echo "<br>";
-        echo $skuPrice->sku_type;
-        dd($skuPrice->price);
+        echo $variant->sku_type;
+        dd($variant->price);
 
 
         echo Currency::formatAmount(500);exit;

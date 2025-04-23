@@ -22,7 +22,7 @@ class SkusWidget extends Widget implements HasActions, HasForms
 
     public ?Model $record = null;
 
-    public ?array $skuPrices = [];
+    public ?array $variants = [];
 
     public ?array $skus = [];
 
@@ -33,7 +33,7 @@ class SkusWidget extends Widget implements HasActions, HasForms
     {
         $this->skus = $this->record->skus->toArray();
 
-        $this->skuPrices = ['sku_prices' => $this->record->skuPrices->toArray()];
+        $this->variants = ['variants' => $this->record->variants->toArray()];
     }
 
 
@@ -58,14 +58,14 @@ class SkusWidget extends Widget implements HasActions, HasForms
             ->action(function ($data) {
                 $this->skus = $data['skus'];
 
-                $this->setSkuPrices();
+                $this->setVariants();
 
             });
     }
 
 
 
-    public function setSkuPrices()
+    public function setVariants()
     {
         
     }
@@ -81,7 +81,7 @@ class SkusWidget extends Widget implements HasActions, HasForms
     public function form(Form $form): Form
     {
         return $form->schema([
-            TableRepeater::make('sku_prices')
+            TableRepeater::make('variants')
                 ->headers([
                     Header::make('name')->width('150px'),
                 ])
@@ -92,7 +92,7 @@ class SkusWidget extends Widget implements HasActions, HasForms
                 ->emptyLabel('please set skus')
                 ->columnSpan('full')
         ])
-        ->statePath('skuPrices');
+        ->statePath('variants');
     }
 
 

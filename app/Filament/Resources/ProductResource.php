@@ -66,7 +66,7 @@ class ProductResource extends Resource
     {
         return $page->generateNavigationItems([
             Pages\EditProduct::class,
-            Pages\ManageSkuPrices::class,
+            Pages\ManageVariants::class,
             // Pages\ManageProductMedia::class,
             // Pages\EditCustomerContact::class,
             // Pages\ManageCustomerAddresses::class,
@@ -78,7 +78,7 @@ class ProductResource extends Resource
     public static function getRelations(): array
     {
         return [
-            // RelationManagers\SkuPricesRelationManager::class,
+            // RelationManagers\VariantsRelationManager::class,
         ];
     }
 
@@ -89,7 +89,7 @@ class ProductResource extends Resource
             'create' => Pages\CreateProduct::route('/create'),
             'view' => Pages\ViewProduct::route('/{record}'),
             'edit' => Pages\EditProduct::route('/{record}/edit'),
-            'manage-sku-prices' => Pages\ManageSkuPrices::route('/{record}/manage-sku-prices'),
+            'manage-variants' => Pages\ManageVariants::route('/{record}/manage-variants'),
         ];
     }
 

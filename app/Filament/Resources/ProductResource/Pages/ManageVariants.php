@@ -12,17 +12,17 @@ use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 
-class ManageSkuPrices extends ManageRelatedRecords
+class ManageVariants extends ManageRelatedRecords
 {
     protected static string $resource = ProductResource::class;
 
-    protected static string $relationship = 'skuPrices';
+    protected static string $relationship = 'variants';
 
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
 
     public static function getNavigationLabel(): string
     {
-        return 'Sku Prices';
+        return 'Variants';
     }
 
 
