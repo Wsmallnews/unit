@@ -42,7 +42,7 @@ class AdminPanelProvider extends PanelProvider
             ])
             ->plugins([
                 ShopPlugin::make(),
-                SpatieLaravelTranslatablePlugin::make()->defaultLocales([config('app.locale')]),
+                SpatieLaravelTranslatablePlugin::make()->defaultLocales([config('app.locale'), 'en']),
                 SkyPlugin::make(),
             ])
             ->discoverWidgets(in: app_path('Filament/Widgets'), for: 'App\\Filament\\Widgets')
