@@ -49,20 +49,20 @@ class ProductModel extends SupportModel implements HasMedia
 
     public function registerMediaCollections(): void
     {
-        $conversions = [
-            'small' => [
-                'width' => 300,
-                'height' => 300,
-            ],
-            'medium' => [
-                'width' => 500,
-                'height' => 500,
-            ],
-            'large' => [
-                'width' => 800,
-                'height' => 800,
-            ],
-        ];
+        // $conversions = [
+        //     'small' => [
+        //         'width' => 300,
+        //         'height' => 300,
+        //     ],
+        //     'medium' => [
+        //         'width' => 500,
+        //         'height' => 500,
+        //     ],
+        //     'large' => [
+        //         'width' => 800,
+        //         'height' => 800,
+        //     ],
+        // ];
 
         $mainCollection = $this->addMediaCollection('main');
         $galleryCollection = $this->addMediaCollection('gallery');

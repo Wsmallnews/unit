@@ -9,13 +9,16 @@
         "awcodes/filament-table-repeater": "^3.1",
         "cknow/laravel-money": "^8.3",
         "codeat3/blade-mono-icons": "^1.5",
+        "deepseek-php/deepseek-laravel": "^2.0",
         "filament/filament": "^3.2",
         "lara-zeus/sky": "^3.4",
         "laravel/framework": "^11.9",
         "laravel/tinker": "^2.9",
         "moneyphp/money": "^4.6",
+        "spatie/laravel-markdown": "^2.7",
         "wsmallnews/category": "dev-main",
         "wsmallnews/evaluate": "dev-main",
+        "wsmallnews/filament-nestedset": "dev-main",
         "wsmallnews/order": "dev-main",
         "wsmallnews/pay": "dev-main",
         "wsmallnews/product": "dev-main",
@@ -92,6 +95,10 @@
         "evaluate": {
             "type": "path",
             "url": "./addons/evaluate"
+        },
+        "filament-nestedset": {
+            "type": "path",
+            "url": "./addons/filament-nestedset"
         },
         "pay": {
             "type": "path",

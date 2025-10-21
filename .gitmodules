@@ -25,3 +25,6 @@
 [submodule "addons/pay"]
 	path = addons/pay
 	url = git@github.com:Wsmallnews/pay.git
+[submodule "addons/filament-nestedset"]
+	path = addons/filament-nestedset
+	url = git@github.com:Wsmallnews/filament-nestedset.git
