@@ -1,0 +1,8 @@
+@import '../../../../vendor/filament/filament/resources/css/theme.css';
+
+@import '../../../../vendor/wsmallnews/filament-nestedset/resources/css/index.css';
+
+@source '../../../../app/Filament/**/*';
+@source '../../../../app/Features/**/*';
+@source '../../../../resources/views/**/*';
+

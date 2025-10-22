@@ -1,0 +1,9 @@
+[submodule "addons/category"]
+	path = addons/category
+	url = git@github.com:Wsmallnews/category.git
+[submodule "addons/shop"]
+	path = addons/shop
+	url = git@github.com:Wsmallnews/shop.git
+[submodule "addons/support"]
+	path = addons/support
+	url = git@github.com:Wsmallnews/support.git

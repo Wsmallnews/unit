@@ -9,7 +9,10 @@
         "php": "^8.2",
         "filament/filament": "4.0",
         "laravel/framework": "^12.0",
-        "laravel/tinker": "^2.10.1"
+        "laravel/tinker": "^2.10.1",
+        "wsmallnews/category": "v1.x-dev",
+        "wsmallnews/shop": "v1.x-dev",
+        "wsmallnews/support": "v1.x-dev"
     },
     "require-dev": {
         "fakerphp/faker": "^1.23",
@@ -84,6 +87,20 @@
             "php-http/discovery": true
         }
     },
-    "minimum-stability": "stable",
-    "prefer-stable": true
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "repositories": {
+        "category": {
+            "type": "path",
+            "url": "./addons/category"
+        },
+        "shop": {
+            "type": "path",
+            "url": "./addons/shop"
+        },
+        "support": {
+            "type": "path",
+            "url": "./addons/support"
+        }
+    }
 }

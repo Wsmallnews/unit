@@ -18,6 +18,9 @@ use Illuminate\Foundation\Http\Middleware\VerifyCsrfToken;
 use Illuminate\Routing\Middleware\SubstituteBindings;
 use Illuminate\Session\Middleware\StartSession;
 use Illuminate\View\Middleware\ShareErrorsFromSession;
+use Wsmallnews\Category\CategoryPlugin;
+use Wsmallnews\Category\Filament\Resources\CategoryTypes\CategoryTypeResource;
+use Wsmallnews\Category\Filament\Pages\Category;
 
 class AdminPanelProvider extends PanelProvider
 {
@@ -54,6 +57,26 @@ class AdminPanelProvider extends PanelProvider
             ])
             ->authMiddleware([
                 Authenticate::class,
+            ])
+            ->plugins([
+                CategoryPlugin::make()
+                    // Configure CategoryTypeResource
+                    ->forResource(CategoryTypeResource::class)
+                        ->modelLabel('分类类型')
+                        ->navigationLabel('分类类型')
+                        ->navigationGroup('分类管理')
+                        // ->slug('custom-slug')
+                        ->globalSearchResultsLimit(25)
+                    
+                    // Configure Category Page
+                    ->forResource(Category::class)
+                        ->modelLabel('分类')
+                        ->navigationLabel('商品分类')
+                        ->navigationGroup('分类管理')
+                        ->customProperties([
+                            'title' => '商品分类aa',
+                            'emptyLabel' => '商品分类数据为空bb',
+                        ])
             ]);
     }
 }
