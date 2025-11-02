@@ -22,6 +22,8 @@ use Wsmallnews\Category\CategoryPlugin;
 use Wsmallnews\Category\Filament\Resources\CategoryTypes\CategoryTypeResource;
 use Wsmallnews\Category\Filament\Resources\CategoryTypes\BaseResource;
 use Wsmallnews\Category\Filament\Pages\Category;
+use Wsmallnews\Cms\CmsPlugin;
+use Wsmallnews\Cms\Filament\Resources\NavigationTypes\NavigationTypeResource;
 
 class AdminPanelProvider extends PanelProvider
 {
@@ -60,6 +62,17 @@ class AdminPanelProvider extends PanelProvider
                 Authenticate::class,
             ])
             ->plugins([
+                CmsPlugin::make()
+                    ->forResource(NavigationTypeResource::class)
+                        ->modelLabel('导航类型1')
+                        ->navigationLabel('导航类型1')
+                        ->navigationGroup('导航管理1')
+                        // ->slug('custom-slug')
+                        ->globalSearchResultsLimit(25)
+                        ->customProperties([
+                            'scopeType' => 'shop',
+                            'scopeId' => 0,
+                        ]),
                 CategoryPlugin::make()
                     // Configure CategoryTypeResource
                     ->forResource(CategoryTypeResource::class)
