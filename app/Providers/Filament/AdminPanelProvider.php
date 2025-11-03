@@ -20,9 +20,10 @@ use Illuminate\Session\Middleware\StartSession;
 use Illuminate\View\Middleware\ShareErrorsFromSession;
 use Wsmallnews\Category\CategoryPlugin;
 use Wsmallnews\Category\Filament\Resources\CategoryTypes\CategoryTypeResource;
-use Wsmallnews\Category\Filament\Resources\CategoryTypes\BaseResource;
 use Wsmallnews\Category\Filament\Pages\Category;
 use Wsmallnews\Cms\CmsPlugin;
+use Wsmallnews\Cms\Filament\Pages\ManageNavigation;
+use Wsmallnews\Cms\Filament\Pages\Navigation;
 use Wsmallnews\Cms\Filament\Resources\NavigationTypes\NavigationTypeResource;
 
 class AdminPanelProvider extends PanelProvider
@@ -64,14 +65,24 @@ class AdminPanelProvider extends PanelProvider
             ->plugins([
                 CmsPlugin::make()
                     ->forResource(NavigationTypeResource::class)
-                        ->modelLabel('导航类型1')
-                        ->navigationLabel('导航类型1')
-                        ->navigationGroup('导航管理1')
+                        ->modelLabel('导航类型')
+                        ->navigationLabel('导航类型')
+                        ->navigationGroup('导航管理')
                         // ->slug('custom-slug')
                         ->globalSearchResultsLimit(25)
                         ->customProperties([
                             'scopeType' => 'shop',
                             'scopeId' => 0,
+                            'emptyLabel' => '干嘛呀，怎么没数据呀！',
+                        ])
+                    ->forResource(Navigation::class)
+                        ->customProperties([
+                            'emptyLabel' => '呀，怎么没数据呀！',
+                            'level' => 2,
+                        ])
+                    ->forResource(ManageNavigation::class)
+                        ->customProperties([
+                            'emptyLabel' => '哦豁，怎么没数据呀！',
                         ]),
                 CategoryPlugin::make()
                     // Configure CategoryTypeResource

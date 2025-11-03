@@ -9844,7 +9844,7 @@
             "dist": {
                 "type": "path",
                 "url": "./addons/category",
-                "reference": "0c86f644748957da9a967a7d720ddf92c0b09bd1"
+                "reference": "0483531556d6eb32e59f8f3746e3d03c1bfa19bf"
             },
             "require": {
                 "bezhansalleh/filament-plugin-essentials": "^1.0",
@@ -9930,7 +9930,7 @@
             "dist": {
                 "type": "path",
                 "url": "./addons/cms",
-                "reference": "722024482488643d85c6b325bba32bf8f76e42ca"
+                "reference": "c73d9a259f53180a1345186d4882171750250cb8"
             },
             "require": {
                 "bezhansalleh/filament-plugin-essentials": "^1.0",
@@ -10015,16 +10015,16 @@
         },
         {
             "name": "wsmallnews/filament-nestedset",
-            "version": "v2.0.2",
+            "version": "v2.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Wsmallnews/filament-nestedset.git",
-                "reference": "bf2a72a996e443f0507355ef5713429b6dfb43ab"
+                "reference": "43250911c42e6c65c80502a55f9626b1c89ece1c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Wsmallnews/filament-nestedset/zipball/bf2a72a996e443f0507355ef5713429b6dfb43ab",
-                "reference": "bf2a72a996e443f0507355ef5713429b6dfb43ab",
+                "url": "https://api.github.com/repos/Wsmallnews/filament-nestedset/zipball/43250911c42e6c65c80502a55f9626b1c89ece1c",
+                "reference": "43250911c42e6c65c80502a55f9626b1c89ece1c",
                 "shasum": ""
             },
             "require": {
@@ -10095,7 +10095,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-09-26T10:08:28+00:00"
+            "time": "2025-11-03T08:12:10+00:00"
         },
         {
             "name": "wsmallnews/shop",
@@ -10194,9 +10194,10 @@
             "dist": {
                 "type": "path",
                 "url": "./addons/support",
-                "reference": "1e99ee45319da7398d80c11805688c063ba8e5fc"
+                "reference": "7b460454bae573c1c5c32bcfc196e6c22a12da91"
             },
             "require": {
+                "bezhansalleh/filament-plugin-essentials": "^1.0",
                 "filament/filament": "^4.0",
                 "filament/spatie-laravel-media-library-plugin": "^3.0",
                 "filament/spatie-laravel-tags-plugin": "^3.0",
