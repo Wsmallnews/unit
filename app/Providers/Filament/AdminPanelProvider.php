@@ -25,6 +25,7 @@ use Wsmallnews\Cms\CmsPlugin;
 use Wsmallnews\Cms\Filament\Pages\ManageNavigation;
 use Wsmallnews\Cms\Filament\Pages\Navigation;
 use Wsmallnews\Cms\Filament\Resources\NavigationTypes\NavigationTypeResource;
+use Wsmallnews\Cms\Filament\Resources\Posts\PostResource;
 
 class AdminPanelProvider extends PanelProvider
 {
@@ -71,8 +72,6 @@ class AdminPanelProvider extends PanelProvider
                         // ->slug('custom-slug')
                         ->globalSearchResultsLimit(25)
                         ->customProperties([
-                            'scopeType' => 'shop',
-                            'scopeId' => 0,
                             'emptyLabel' => '干嘛呀，怎么没数据呀！',
                         ])
                     ->forResource(Navigation::class)
@@ -83,19 +82,24 @@ class AdminPanelProvider extends PanelProvider
                     ->forResource(ManageNavigation::class)
                         ->customProperties([
                             'emptyLabel' => '哦豁，怎么没数据呀！',
-                        ]),
-                CategoryPlugin::make()
-                    // Configure CategoryTypeResource
-                    ->forResource(CategoryTypeResource::class)
-                        ->modelLabel('分类类型')
-                        ->navigationLabel('分类类型')
-                        ->navigationGroup('分类管理')
-                        // ->slug('custom-slug')
-                        ->globalSearchResultsLimit(25)
-                        ->customProperties([
-                            'scopeType' => 'admin',
-                            'scopeId' => 8,
                         ])
+                    ->forResource(PostResource::class)
+                        ->customProperties([
+                            'scopeType' => 'sdsdsd',
+                            'bbbb' => 'cccc',
+                        ]),
+                // CategoryPlugin::make()
+                //     // Configure CategoryTypeResource
+                //     ->forResource(CategoryTypeResource::class)
+                //         ->modelLabel('分类类型')
+                //         ->navigationLabel('分类类型')
+                //         ->navigationGroup('分类管理')
+                //         // ->slug('custom-slug')
+                //         ->globalSearchResultsLimit(25)
+                //         ->customProperties([
+                //             'scopeType' => 'admin',
+                //             'scopeId' => 8,
+                //         ])
                     
                     // // Configure Category Page
                     // ->forResource(Category::class)
