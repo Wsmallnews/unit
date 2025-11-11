@@ -77,7 +77,7 @@ class AdminPanelProvider extends PanelProvider
                     ->forResource(Navigation::class)
                         ->customProperties([
                             'emptyLabel' => '呀，怎么没数据呀！',
-                            'level' => 2,
+                            'level' => 3,
                         ])
                     ->forResource(ManageNavigation::class)
                         ->customProperties([
@@ -110,6 +110,7 @@ class AdminPanelProvider extends PanelProvider
                     //         'title' => '商品分类aa',
                     //         'emptyLabel' => '商品分类数据为空bb',
                     //     ])
-            ]);
+            ])
+            ->viteTheme('resources/css/filament/admin/theme.css');
     }
 }

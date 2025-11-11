@@ -6,3 +6,6 @@
 @source '../../../../app/Features/**/*';
 @source '../../../../resources/views/**/*';
 
+/** 引入 guava/filament-icon-picker 资源 **/
+@source '../../vendor/guava/filament-icon-picker/resources/**/*';
+

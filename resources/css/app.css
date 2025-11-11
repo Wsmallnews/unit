@@ -1,5 +1,8 @@
 @import '../../vendor/filament/filament/resources/css/theme.css';
 
+/** 引入 guava/filament-icon-picker 资源 **/
+@source '../../vendor/guava/filament-icon-picker/resources/**/*';
+
 @source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
 @source '../../storage/framework/views/*.php';
 @source '../**/*.blade.php';

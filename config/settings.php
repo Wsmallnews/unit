@@ -40,6 +40,12 @@ return [
             'table' => null,
             'connection' => null,
         ],
+        'team_database' => [
+            'type' => Wsmallnews\Support\Tenant\Settings\Repositories\DatabaseSettingsRepository::class,
+            'model' => null,
+            'table' => 'team_settings',
+            'connection' => null,
+        ],
         'redis' => [
             'type' => Spatie\LaravelSettings\SettingsRepositories\RedisSettingsRepository::class,
             'connection' => null,
