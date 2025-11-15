@@ -7,5 +7,8 @@
 @source '../../../../resources/views/**/*';
 
 /** 引入 guava/filament-icon-picker 资源 **/
-@source '../../vendor/guava/filament-icon-picker/resources/**/*';
+@source '../../../../vendor/guava/filament-icon-picker/resources/**/*';
+
+/* 自己插件资源 */
+@source '../../../../vendor/wsmallnews/**/*';
 

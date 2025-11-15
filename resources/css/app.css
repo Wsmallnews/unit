@@ -10,6 +10,9 @@
 
 @source '../../vendor/wsmallnews/**/*.blade.php';
 
+/* 自己插件资源 */
+@source '../../vendor/wsmallnews/**/*';
+
 @theme {
     --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
         'Segoe UI Symbol', 'Noto Color Emoji';
