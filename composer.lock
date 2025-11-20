@@ -9856,7 +9856,7 @@
             "dist": {
                 "type": "path",
                 "url": "./addons/category",
-                "reference": "69147ed71b69b95f75db31d5df06acf0f585d9d2"
+                "reference": "ba6806b99c00327d30b0b8df81bc731e77d46715"
             },
             "require": {
                 "bezhansalleh/filament-plugin-essentials": "^1.0",
@@ -9942,7 +9942,7 @@
             "dist": {
                 "type": "path",
                 "url": "./addons/cms",
-                "reference": "b236cc95315457b31b7d2914fe38ed6d52f0015c"
+                "reference": "f674b2ca41c5a1b4e8f8f27d5d632cff937b58d8"
             },
             "require": {
                 "bezhansalleh/filament-plugin-essentials": "^1.0",
@@ -10028,16 +10028,16 @@
         },
         {
             "name": "wsmallnews/filament-nestedset",
-            "version": "v2.0.3",
+            "version": "v2.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Wsmallnews/filament-nestedset.git",
-                "reference": "43250911c42e6c65c80502a55f9626b1c89ece1c"
+                "reference": "66c84878b0383df1a8c955ea2763b87c45cbc2b4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Wsmallnews/filament-nestedset/zipball/43250911c42e6c65c80502a55f9626b1c89ece1c",
-                "reference": "43250911c42e6c65c80502a55f9626b1c89ece1c",
+                "url": "https://api.github.com/repos/Wsmallnews/filament-nestedset/zipball/66c84878b0383df1a8c955ea2763b87c45cbc2b4",
+                "reference": "66c84878b0383df1a8c955ea2763b87c45cbc2b4",
                 "shasum": ""
             },
             "require": {
@@ -10108,7 +10108,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-11-03T08:12:10+00:00"
+            "time": "2025-11-17T08:17:12+00:00"
         },
         {
             "name": "wsmallnews/shop",
@@ -10207,7 +10207,7 @@
             "dist": {
                 "type": "path",
                 "url": "./addons/support",
-                "reference": "746e5584d376d816bec11c73d83c00886898d9fa"
+                "reference": "be43b972bbc4c3b44dc45d256a5019ed359e08f9"
             },
             "require": {
                 "bezhansalleh/filament-plugin-essentials": "^1.0",
